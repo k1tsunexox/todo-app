@@ -14,11 +14,9 @@ export default function RootLayout({
       <body>
         <TaskProvider>
           <Navbar />
-
           <main className="max-w-2xl mx-auto p-6">
             {children}
           </main>
-
         </TaskProvider>
       </body>
     </html>

@@ -1,5 +1,16 @@
 'use client';
 
+import TaskItem from './TaskItem';
+
+<ul className="space-y-2">
+  {tasks.map(task => (
+    <TaskItem
+      key={task.id}
+      task={task}
+    />
+  ))}
+</ul>
+
 import {
   useTaskContext,
 } from '@/context/TaskContext';
